@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI MAKER</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        .ui{
+            text-align: center;
+            border: 3px dotted red;
+            padding: 20px;
+        }
+        #output{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 25px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <input type="url" id="img" placeholder="Enter Your IMG URL">
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <input type="email" id="email" placeholder="Enter Your Email">
+        <input type="number" id="number" placeholder="Enter Your Number">
+        <input type="number" id="age" placeholder="Enter Your Age">
+        <input type="submit">
+    </form>
+    <div id="output"></div>
+</body>
+<script src="index.js"></script>
+</html>
